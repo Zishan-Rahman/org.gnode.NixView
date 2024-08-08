@@ -1,9 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Copyright 2017 Christian J. Kellner <gicmo@gnome.org> -->
-<application>
-  <id type="desktop">org.gnode.NixView.desktop</id>
+<component type="desktop">
+  <id>org.gnode.NixView</id>
+  <provides>
+    <id>org.gnode.NixView.desktop</id>
+  </provides>
+  <launchable type="desktop-id">org.gnode.NixView.desktop</launchable>
   <name>NixView</name>
   <summary>Viewer for nix datafiles</summary>
+  <developer_name>Neuroethology lab in Tübingen run by Jan Benda</developer_name>
   <metadata_license>CC0-1.0</metadata_license>
   <project_license>BSD-3-Clause</project_license>
   <description>
@@ -13,14 +18,15 @@
       built in too.
     </p>
   </description>
-  <url type="homepage">http://bendalab.github.io/NixView/</url>
+  <url type="homepage">https://bendalab.github.io/NixView/</url>
   <screenshots>
     <screenshot type="default">http://bendalab.github.io/NixView/images/screenshot.png</screenshot>
   </screenshots>
   <content_rating type="oars-1.1" />
   <updatecontact>gicmo@gnome.org</updatecontact>
+  <url type="vcs-browser">https://github.com/bendalab/NixView/</url>
   <url type="bugtracker">https://github.com/bendalab/NixView/issues</url>
   <releases>
     <release date="2017-09-10" version="0.1"/>
   </releases>
-</application>
+</component>
